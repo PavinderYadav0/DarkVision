@@ -138,6 +138,12 @@ Results will be saved in `result` folder.
 
 
 
+<div align="center">
+    <a href="./">
+        <img src="./ezgif-5-8174b704fd.gif" width="59%"/>
+    </a>
+</div>
+
 ![App Screenshot](https://i.ibb.co/bJhm4np/ezgif-5-8174b704fd.gif)
 
 
