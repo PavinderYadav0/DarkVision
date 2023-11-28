@@ -11,7 +11,7 @@ Currently, weapon detection through video surveillance has been extensively stud
 Install the dependend libraries using
 
 ```
-pip Install requirment.txt
+pip install -r requirements.txt
 ```
 
 Requirments
@@ -70,7 +70,7 @@ To test the model run the following command.
 ```bash
 python test.py  --batch-size 8 --device 0 --data data\handgun.yaml --weights results\train\yolov7-handgun\weights\last.pt --conf 0.50 --project results
 ```
-Results will be saved in `runs/test/exp*`  folder.
+Results will be saved in `runs\test\exp*`  folder.
 
  ## Inference
 
@@ -95,7 +95,7 @@ python detect_auto.py --weights  results\train\yolov7-handgun\weights\best.pt --
 
 Replace the argument ``--source data\dark.mp4`` with ``--source video_path`` to conduct detections on your custom videos or images.
 
-Results will be saved in `runs/detect/exp*`  folder.
+Results will be saved in `runs\detect\exp*`  folder.
 
 
 
@@ -108,7 +108,7 @@ python detect_get.py --weights  results\train\yolov7-handgun\weights\best.pt --c
 
 Replace the argument ``--source data\dark.mp4`` with ``--source video_path`` to conduct detections on your custom videos.
 
-Results will be saved in `runs/detect/exp*`  folder.
+Results will be saved in `runs\detect\exp*`  folder.
 
 
 **Bright Videos**
@@ -122,7 +122,7 @@ python detect.py --weights  results\train\yolov7-handgun\weights\best.pt --conf 
 
 Replace the argument ``--source data\bright.mp4`` with ``--source video_path`` to conduct detections on your custom videos.
 
-Results will be saved in `runs/detect/exp*`  folder.
+Results will be saved in `runs\detect\exp*`  folder.
 
 ### Gamma Test
  
@@ -131,7 +131,7 @@ Results will be saved in `runs/detect/exp*`  folder.
 ```
 python Gamma_test.py data\dark.jpg
 ```
-Replace the argument ``data\dark.jpg``  with ``Path/to/image`` to conduct detections on your custom image.
+Replace the argument ``data\dark.jpg``  with ``Path\to\image`` to conduct detections on your custom image.
 
 Results will be saved in `result` folder.
 ## Demo
