@@ -137,7 +137,7 @@ Results will be saved in `result` folder.
 ## Demo
 
 
-
+![](https://github.com/PavinderYadav0/DarkVision/blob/main/ezgif.com-gif-to-mp4.gif)
 <div align="center">
     <a href="./">
         <img src="ezgif-5-8174b704fd.gif" width="59%"/>
