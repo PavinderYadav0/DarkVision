@@ -140,7 +140,7 @@ Results will be saved in `result` folder.
 
 <div align="center">
     <a href="./">
-        <img src="./ezgif-5-8174b704fd.gif" width="59%"/>
+        <img src="ezgif-5-8174b704fd.gif" width="59%"/>
     </a>
 </div>
 
