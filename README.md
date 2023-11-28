@@ -138,13 +138,6 @@ Results will be saved in `result` folder.
 
 
 ![](https://github.com/PavinderYadav0/DarkVision/blob/main/ezgif.com-gif-to-mp4.gif)
-<div align="center">
-    <a href="./">
-        <img src="ezgif-5-8174b704fd.gif" width="59%"/>
-    </a>
-</div>
-
-![App Screenshot](https://i.ibb.co/bJhm4np/ezgif-5-8174b704fd.gif)
 
 
 This GIF showcases a side-by-side comparison between a dark input video and an enhanced bright video with real-time handgun detection. On the left-hand side, the original dark video demonstrates challenging low-light conditions, while the right-hand side displays the same video after enhancement, exhibiting improved brightness and clarity. 
