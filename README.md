@@ -164,14 +164,14 @@ In scenarios featuring dark input frames, the YOLOv7-DarkVision model assumes re
  Department of Computer Applications 
  National Institute of Technology, Kurukshetra, Haryana
  ```
- [Google Scholar](https://scholar.google.com/citations?user=W8oqW54AAAAJ&hl=en&authuser=1) , [ResearchGate](https://www.researchgate.net/profile/Nidhi-Gupta-74)
+
 
 - **Dr. Pawan Kumar Sharma**
  ```
  Department of Mathematics and Scientific Computing 
  National Institute of Technology, Hamirpur, Himachal Pradesh
  ```
- [Google Scholar](https://scholar.google.com/citations?user=ufQZ4b6YBOEC&hl=en&authuser=1) , [ResearchGate](https://www.researchgate.net/profile/Pawan-Sharma-43)
+
 ## Acknowledgements
 
  - [Official yolov7](https://github.com/WongKinYiu/yolov7)
