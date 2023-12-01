@@ -60,15 +60,22 @@ thop  # FLOPs computation
 
 ## Architecture - Yolov7-DarkVision
 
-![App Screenshot ](https://i.ibb.co/4sTRsXv/1.png>)
+![](https://github.com/PavinderYadav0/DarkVision/blob/main/figures/architecture.png)
+
+
 ## Deployment
 
-The initial command using ``test.py`` runs the model for testing purposes. 
+For model testing, start by acquiring the validation data from [here](https://drive.google.com/file/d/1SfC_b2F9CIqFXxh23doKV_RkJGHjCwV5/view?usp=sharing). After downloading, unzip the file named ``val.zip`` into the ``data`` folder within the project repository. This action is essential to prepare the data for subsequent model evaluation.
+
+Download the [last.pt](https://drive.google.com/file/d/1LknsYGbqUUGKUUP5KIeP05SpWVsVV0A3/view?usp=sharing) and [best.pt](https://drive.google.com/file/d/1sj6F6xwl0Q9FK-Nsxwzq0QnlgXzVsddI/view?usp=sharing) files and subsequently relocate them to the ``results\train\yolov7-handgun\weights`` folder within the project directory.
+
+
+The initial command using ``test.py`` runs the model for testing purposes.
 
 To test the model run the following command.
 
 ```bash
-python test.py  --batch-size 8 --device 0 --data data\handgun.yaml --weights results\train\yolov7-handgun\weights\last.pt --conf 0.50 --project results
+python test.py  --batch-size 8 --device 0 --data data\handgun.yaml --weights results\train\yolov7-handgun\weights\last.pt --conf 0.50
 ```
 Results will be saved in `runs\test\exp*`  folder.
 
@@ -76,9 +83,12 @@ Results will be saved in `runs\test\exp*`  folder.
 
 Detect –
 
+Download the [best.pt](https://drive.google.com/file/d/1sj6F6xwl0Q9FK-Nsxwzq0QnlgXzVsddI/view?usp=sharing) files and subsequently relocate them to the ``results\train\yolov7-handgun\weights`` folder within the project directory.
 
-Dark Video 
+To conduct model testing on both dark and bright videos, begin by downloading the video files from the following sources: [Dark Video](https://drive.google.com/file/d/1GM9FXvSJRAWtWAUw4Uj1IkFMIJLf58Qg/view?usp=sharing) and [Bright Video](https://drive.google.com/file/d/1GQcBSce8SbWcYlPWXPAvz2B6jL8xyf8u/view?usp=sharing). Subsequently, store these downloaded files within the designated 'data' folder for seamless access during the testing phase.
 
+
+**Dark Videos** 
 
 #### 1.	**Automatic**  -
 Automatic Detection: Utilizes ``detect_auto.py`` to perform automatic handgun detection on a dark video. This command uses a specific set of weights, sets the confidence threshold, defines the image size, video source, and enables the view of images during detection. The resulting detections are saved in a designated folder.
@@ -137,14 +147,14 @@ Results will be saved in `result` folder.
 ## Demo
 
 
-![](https://github.com/PavinderYadav0/DarkVision/blob/main/ezgif.com-gif-to-mp4.gif)
+![](https://github.com/PavinderYadav0/DarkVision/blob/main/figures/demo.gif)
 
 
 This GIF showcases a side-by-side comparison between a dark input video and an enhanced bright video with real-time handgun detection. On the left-hand side, the original dark video demonstrates challenging low-light conditions, while the right-hand side displays the same video after enhancement, exhibiting improved brightness and clarity. 
 - The video dataset has been sourced from the scholarly work of [Grega et al. (2015)](https://www.mdpi.com/1424-8220/16/1/47)
 ## Working Pipeline
 
-![App Screenshot](https://i.ibb.co/nnrSRJ3/Screenshot-2023-11-23-170114.png)
+![](https://github.com/PavinderYadav0/DarkVision/blob/main/figures/PIPELINE.png)
 
 In scenarios featuring dark input frames, the YOLOv7-DarkVision model assumes responsibility for the detection process. This specialized model is meticulously crafted to manage dark frames and low-light conditions adeptly. Its initial step involves augmenting the dark input frame utilizing sophisticated image processing techniques, thereby significantly enhancing image visibility and quality. Following the application of this enhancement, the YOLOv7-DarkVision model conducts precise detection by identifying handguns within the improved dark frame.
 ## Authors
