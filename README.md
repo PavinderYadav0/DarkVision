@@ -81,7 +81,7 @@ Results will be saved in `runs\test\exp*`  folder.
 
  ## Inference
 
-Detect –
+###Detect –
 
 Download the [best.pt](https://drive.google.com/file/d/1sj6F6xwl0Q9FK-Nsxwzq0QnlgXzVsddI/view?usp=sharing) files and subsequently relocate them to the ``results\train\yolov7-handgun\weights`` folder within the project directory.
 
