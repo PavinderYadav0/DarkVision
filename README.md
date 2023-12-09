@@ -6,6 +6,12 @@
 Currently, weapon detection through video surveillance has been extensively studied using deep learning techniques by researchers. However, limited attention has been given to the detection of weapons in night time or dark scenarios. This paper aims to address this gap by proposing a novel approach for weapon detection specifically modified for low-light conditions. The authors demonstrate accurate and robust detection of weapons in challenging nighttime environments by modifying the deep learning model YOLOv7. The YOLOv7-DarkVision model has been developed by combining a brightening algorithm with the advanced image  processing techniques and architecture of YOLOv7. A dataset of 15,367 images were collected for training of the model, along with five dark videos from various sources for performance evaluation. The derived detection model, which has a precision score of 95.50% and an F1-Score of 93.41%, performs absolutely well as a weapon detector.
 
 
+
+Here is the doi to access the paper: https://doi.org/10.1016/j.dsp.2023.104342 
+
+
+The codes have undergone verification through Code Ocean and are accessible at: https://doi.org/10.24433/CO.2176072.v1
+
 ## Installation
 
 Install the dependend libraries using
@@ -78,6 +84,10 @@ To test the model run the following command.
 python test.py  --batch-size 8 --device 0 --data data\handgun.yaml --weights results\train\yolov7-handgun\weights\last.pt --conf 0.50
 ```
 Results will be saved in `runs\test\exp*`  folder.
+
+OR
+
+The viability of the results can be examined on the CodeOcean platform via the following link: https://doi.org/10.24433/CO.2176072.v1. Access the "Reproducible Run" by clicking on the provided link
 
  ## Inference
 
@@ -168,20 +178,22 @@ In scenarios featuring dark input frames, the YOLOv7-DarkVision model assumes re
  [Google Scholar](https://scholar.google.com/citations?hl=en&authuser=1&user=p6ZeLMkAAAAJ) , [ResearchGate](https://www.researchgate.net/profile/Pavinder-Yadav) , [Orcid](https://orcid.org/0000-0001-8682-0234)
  
 
-- **Dr. Nidhi Gupta**
+If you intend to utilize the code or findings from this study, we kindly request proper citation as follows:
 
- ```
- Department of Computer Applications 
- National Institute of Technology, Kurukshetra, Haryana
- ```
-
-
-- **Dr. Pawan Kumar Sharma**
- ```
- Department of Mathematics and Scientific Computing 
- National Institute of Technology, Hamirpur, Himachal Pradesh
- ```
-
+```
+@article{YADAV2024104342,
+title = {Robust weapon detection in dark environments using Yolov7-DarkVision},
+journal = {Digital Signal Processing},
+volume = {145},
+pages = {104342},
+year = {2024},
+issn = {1051-2004},
+doi = {https://doi.org/10.1016/j.dsp.2023.104342},
+url = {https://www.sciencedirect.com/science/article/pii/S1051200423004372},
+author = {Pavinder Yadav and Nidhi Gupta and Pawan Kumar Sharma}
+}
+```
+Cite the code by CodeOcean at : https://doi.org/10.24433/CO.2176072.v1
 ## Acknowledgements
 
  - [Official yolov7](https://github.com/WongKinYiu/yolov7)
